@@ -1,7 +1,6 @@
 from picamera import PiCamera
 from time import sleep
 import datetime
-import hx711
 
 # Camera for capturing
 class SecurityCamera:
@@ -22,3 +21,8 @@ class SecurityCamera:
             self.camera.capture('/home/pi/Desktop/security/' + file_name)
             self.camera.stop_preview()
             
+##hx = HX711(5, 6)
+##hx.set_reading_format("LSB", "MSB")
+##hx.set_reference_unit(92)
+##hx.reset()
+##hx.tare()
