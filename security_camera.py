@@ -1,6 +1,7 @@
 from picamera import PiCamera
 from time import sleep
 import datetime
+import hx711
 
 # Camera for capturing
 class SecurityCamera:
@@ -20,3 +21,4 @@ class SecurityCamera:
             sleep(2)
             self.camera.capture('/home/pi/Desktop/security/' + file_name)
             self.camera.stop_preview()
+            
