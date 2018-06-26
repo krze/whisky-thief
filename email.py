@@ -37,7 +37,7 @@ fp.close()
 msgImage.add_header('Content-ID', '<image1>')
 msgRoot.attach(msgImage)
 
-password = password()
+password = 'password'
 
 # Send the email (this example assumes SMTP authentication is required)
 import smtplib
