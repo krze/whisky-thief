@@ -59,6 +59,3 @@ class EmailSender:
         smtp.login('whiskythief1@gmail.com', password)
         smtp.sendmail(strFrom, strTo, msgRoot.as_string())
         smtp.quit()
-    
-    
-

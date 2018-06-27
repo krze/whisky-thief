@@ -18,9 +18,11 @@ class SecurityCamera:
         for file_name in file_names:
             self.camera.start_preview()
             sleep(2)
-            self.camera.capture('/home/pi/Desktop/security/' + file_name)
+            self.camera.capture(file_name)
             self.camera.stop_preview()
-            
+        
+        return file_names
+        
 ##hx = HX711(5, 6)
 ##hx.set_reading_format("LSB", "MSB")
 ##hx.set_reference_unit(92)
