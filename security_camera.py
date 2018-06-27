@@ -22,9 +22,3 @@ class SecurityCamera:
             self.camera.stop_preview()
         
         return file_names
-        
-##hx = HX711(5, 6)
-##hx.set_reading_format("LSB", "MSB")
-##hx.set_reference_unit(92)
-##hx.reset()
-##hx.tare()
