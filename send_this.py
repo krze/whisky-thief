@@ -4,6 +4,7 @@
 from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 from email.MIMEImage import MIMEImage
+import datetime
 
 class EmailSender:
     
@@ -14,7 +15,7 @@ class EmailSender:
 
         # Create the root message and fill in the from, to, and subject headers
         msgRoot = MIMEMultipart('related')
-        msgRoot['Subject'] = 'test message'
+        msgRoot['Subject'] = 'ENEMY SPOTTED AT ' + str(datetime.datetime.now())
         msgRoot['From'] = strFrom
         msgRoot['To'] = strTo
         msgRoot.preamble = 'This is a multi-part message in MIME format.'
